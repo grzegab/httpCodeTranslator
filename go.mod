@@ -1,3 +1,3 @@
-module github.com/grzegab/httpCodeTranslator
+module httpCodeTranslator
 
 go 1.22
