@@ -7,13 +7,13 @@ type Translator struct {
 	httpMessage string
 }
 
-func (t *Translator) grpcToHttp() (int, string) {
+func (t *Translator) GrpcToHttp() (int, string) {
 	t.httpCode, t.httpMessage = grpcDictionary(t.grpcCode)
 
 	return t.httpCode, t.httpMessage
 }
 
-func (t *Translator) httpToGRPC() (int, string) {
+func (t *Translator) HttpToGRPC() (int, string) {
 	t.grpcCode, t.grpcMessage = httpDictionary(t.httpCode)
 
 	return t.grpcCode, t.grpcMessage
