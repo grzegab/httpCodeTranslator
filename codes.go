@@ -1,4 +1,4 @@
-package httpCodeTranslator
+package main
 
 type Translator struct {
 	httpCode    int
