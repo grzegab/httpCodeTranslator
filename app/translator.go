@@ -1,4 +1,4 @@
-package codes
+package translator
 
 type Translator struct {
 	httpCode    int
